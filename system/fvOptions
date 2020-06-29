@@ -19,18 +19,21 @@ energySource1
 {
     type            scalarSemiImplicitSource;
     active          true;
-    timeStart       0.001;
-    duration        0.0002;
-    selectionMode   points;
-    points
-    (
-        (0.005 -0.01 0)
-    );
 
-    volumeMode      absolute;
-    injectionRateSuSp
+    scalarSemiImplicitSourceCoeffs
     {
-        h           (30 0);
+        timeStart       0.001;
+        duration        0.0002;
+        selectionMode   points;
+        points
+        (
+            (0.005 -0.01 0)
+        );
+        volumeMode      absolute;
+        injectionRateSuSp
+        {
+            h           (30 0);
+        }
     }
 }
 
